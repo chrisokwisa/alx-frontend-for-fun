@@ -4,6 +4,7 @@
 
 import sys
 
+
 def markdown2html(input_file, output_file):
     """ Takes an argument 2 strings """
     try:
