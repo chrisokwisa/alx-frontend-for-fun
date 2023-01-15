@@ -14,20 +14,27 @@ def markdown2html(input_file, output_file):
         print(f"Missing {input_file}", file=sys.stderr)
         sys.exit(1)
     lines = markdown_text.split("\n")
-    html_lines = ["<ul>"]
-
+    html_lines = []
+    in_list = False
     for line in lines:
-        if line.startswith("- "):
+        if line.startswith("# "):
+            html_lines.append("<h1>" + line[2:] + "</h1>")
+        elif line.startswith("## "):
+            html_lines.append("<h2>" + line[3:] + "</h2>")
+        elif line.startswith("### "):
+            html_lines.append("<h3>" + line[4:] + "</h3>")
+        elif line.startswith("#### "):
+            html_lines.append("<h4>" + line[5:] + "</h4>")
+        elif line.startswith("##### "):
+            html_lines.append("<h5>" + line[6:] + "</h5>")
+        elif line.startswith("* "):
+            if not in_list:
+                html_lines.append("<ol>")
+                in_list = True
             html_lines.append("<li>" + line[2:] + "</li>")
         else:
-            if html_lines[-1] != "<ul>":
-                html_lines.append("</ul>")
-            html_lines.append(line)
-    if html_lines[-1] != "<ul>":
-        html_lines.append("</ul>")
-    html_text = "\n".join(html_lines)
-    with open(output_file, 'w') as f:
-        f.write(html_text)
+            if in_list:
+                html_lines
 
 
 if __name__ == '__main__':
