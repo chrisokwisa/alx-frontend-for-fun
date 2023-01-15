@@ -14,7 +14,7 @@ def markdown2html(input_file, output_file):
         print(f"Missing {input_file}", file=sys.stderr)
         sys.exit(1)
     lines = markdown_text.split("\n")
-    html_lines = []
+    html_lines = ["<ul>"]
 
     for line in lines:
         if line.startswith("- "):
