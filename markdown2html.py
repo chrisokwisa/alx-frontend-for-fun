@@ -1,14 +1,11 @@
 #!/usr/bin/python3
-""" has a markdown script """
+""" Has a script markdown2html """
 
 
 import sys
-import markdown
-
 
 def markdown2html(input_file, output_file):
-    """ Takes an argument 2 strings
-    Second argument is the output file name """
+    """ Takes an argument 2 strings """
     try:
         with open(input_file, 'r') as f:
             markdown_text = f.read()
@@ -20,7 +17,6 @@ def markdown2html(input_file, output_file):
 
     with open(output_file, 'w') as f:
         f.write(html)
-
 
 if __name__ == '__main__':
     if len(sys.argv) < 3:
