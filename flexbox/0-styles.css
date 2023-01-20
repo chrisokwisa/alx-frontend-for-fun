@@ -342,17 +342,10 @@ ul.row {
 
 [class*="col-"] {
   padding: 0.5rem;
-  float: none;
 }
 
 .col-1-3 {
   width: 33.33%;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
 }
 
 .col-1-2 {
