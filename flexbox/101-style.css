@@ -3,14 +3,34 @@
   flex-wrap: wrap;
 }
 
-.box .box1 {
-  color: (--color-green);
+/* Boxes */
+.box {
+  flex: 1;
+  border: 1px solid black;
+  height: 100px;
 }
 
-.box .box1 {
-  color: (--color-blue);
+/* Box 1 */
+.box1 {
+  background-color: #ff0000;
 }
 
-.box .box1 {
-  color: (--color-dark-blue);
+/* Box 2 */
+.box2 {
+  background-color: #00ff00;
+}
+
+/* Box 3 */
+.box3 {
+  background-color: #0000ff;
+}
+
+/* Box 4 */
+.box4 {
+  background-color: #00ffff;
+}
+
+/* Box 5 */
+.box5 {
+  background-color: #ff00ff;
 }
