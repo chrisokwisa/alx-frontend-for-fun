@@ -261,7 +261,7 @@
                         maxlength="35"
                         autocomplete="on"
                         accesskey="f"
-                        required="true"
+                        required
                       />
                     </span>
                   </div>
@@ -277,6 +277,7 @@
                         placeholder="e.g. Smith"
                         pattern="[A-Za-zÀ-ž\s]{3,}"
                         maxlength="40"
+                        autocomplete
                         accesskey="l"
                         required
                       />
@@ -315,7 +316,6 @@
                         placeholder="e.g. I loved that article"
                         pattern="[A-Za-zÀ-ž\s]{4,}"
                         maxlength="75"
-                        autocomplete
                         accesskey="t"
                         required
                       />
@@ -333,8 +333,9 @@
                         minlength="10"
                         accesskey="c"
                         required="true"
-                        columns="30"
+                        cols="30"
                         rows="6"
+                        required
                       ></textarea>
                     </span>
                   </div>
