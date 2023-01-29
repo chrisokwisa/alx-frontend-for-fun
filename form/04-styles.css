@@ -860,10 +860,23 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
   border: 0.1rem solid var(--color-grey);
-  background-color: var(--color-light-grey);
 }
 
 ::placeholder {
   font-style: italic;
   font-size: var(--font-size-small);
+}
+
+/* Form group
+                              ============================= */
+
+.form-group {
+  padding: 1rem;
+  margin: 0;
+  background-color: var(--color-white);
+}
+
+.form-group:focus-within {
+  background-color: var(--color-light-grey);
+  transition: 0.3s;
 }
