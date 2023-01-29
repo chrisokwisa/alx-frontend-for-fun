@@ -297,6 +297,7 @@ a:active {
   font-size: var(--button-font-size);
   color: var(--button-color);
   text-decoration: var(--button-text-decoration);
+  cursor: pointer;
 }
 
 .button:hover {
@@ -312,7 +313,7 @@ a:active {
   background: var(--color-primary);
 }
 .button-primary:hover {
-  color: var(--color-white);
+  color: var(--color-primary);
   background: var(--color-white);
 }
 
