@@ -809,10 +809,6 @@ ul.row {
   transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
-.card-work:hover .card-inner {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
 .card-work .card-title {
   text-align: center;
   margin: 0;
@@ -820,13 +816,14 @@ ul.row {
   position: relative;
 }
 
-.card-work .card-title a:focus {
+.card-work .card-title a {
   display: block;
   text-decoration: none;
   padding-top: 45%;
   opacity: 0;
 }
 
+.card-work:hover .card-title a:focus,
 .card-work:hover .card-title a {
   opacity: 1;
   height: 100%;
