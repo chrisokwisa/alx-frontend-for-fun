@@ -356,13 +356,13 @@ a:active {
   opacity: 0;
   top: 0;
   z-index: 10;
-  transform: translate(-1rem);
+  transform: translateY(-1rem);
   transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 .skip-link:focus {
   opacity: 1;
-  transform: translate(0);
+  transform: translateY(0);
 }
 
 /*** 2. LAYOUT ***/
