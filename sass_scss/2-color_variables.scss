@@ -1,0 +1,15 @@
+/* Write a Sass fie that assigns:
+The text color #3D3D3D to the html tags body and p
+The background color #6d6d6d to the html tags body and h2
+You must use 2 sass variables */
+
+$main-text-color: #3D3D3D;
+$main-background-color: #6d6d6d;
+
+body, p {
+    color: $main-text-color;
+}
+
+body, h2 {
+    background-color: $main-background-color;
+}
