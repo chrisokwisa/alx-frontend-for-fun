@@ -8,21 +8,9 @@ You must create .col-* class from 1 to 4
 You must use a @for statement */
 
 
-@for $i from 1 through 4 {
+@for $i from 1 through 5 {
     .col-#{$i} {
         width: 100% / $i;
     }
 }
 
-.col-2 {
-    width: 50%;
-}
-
-.col-3 {
-    width: 33.3333333333%;
-
-}
-
-.col-4 {
-    width: 25%;
-}
