@@ -7,7 +7,7 @@ You must use nested declarations */
 body {
     color: #3d3d3d;
 
-      .red:first-child {
+    > .red {
         color: #ff0000;
      }
 }
