@@ -16,5 +16,5 @@ Text color #FF0000 to all tags of class .warning and extend style of the class .
 
 .warning {
     @extend .info;
-
+    color: #ff0000;
 }
