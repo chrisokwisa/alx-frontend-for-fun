@@ -1,0 +1,10 @@
+/* a sass file that assigns the text color to html tags body and p */
+$main-text-color: #3D3D3D;
+
+body {
+    color: $main-text-color;
+}
+
+p {
+    color: $main-text-color;
+}
